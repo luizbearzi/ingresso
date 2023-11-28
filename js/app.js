@@ -6,11 +6,9 @@ function comprar() {
     // fazendo cálculo descontando os ingressos 
     if (tipoIngresso.value == 'pista') {
         comprarPista(quantidadeIngresso);
-    } 
-    if (tipoIngresso.value == 'superior') {
+    } else if (tipoIngresso.value == 'superior') {
         comprarSuperior(quantidadeIngresso);
-    }
-    if (tipoIngresso.value == 'inferior') {
+    } else if (tipoIngresso.value == 'inferior') {
         comprarInferior(quantidadeIngresso);
     }
 
